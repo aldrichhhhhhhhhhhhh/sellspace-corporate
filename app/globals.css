@@ -773,3 +773,11 @@ body{background:var(--paper);color:var(--ink)}
 /* Prevent decorative orbit and mockup layers from creating page-level horizontal scroll */
 html,body{max-width:100%;overflow-x:clip}
 @supports not (overflow:clip){html,body{overflow-x:hidden}}
+
+
+/* Clear route from the homepage platform teaser to the dedicated platform page */
+.platform-more-link{display:inline-flex;align-items:center;gap:12px;margin-top:22px;padding-bottom:9px;border-bottom:1px solid #63B6A1;color:#F4F5F2;font-size:12px;font-weight:600;transition:gap .22s ease,color .22s ease}
+.platform-more-link svg{color:#63B6A1;transition:transform .22s ease}
+.platform-more-link:hover{gap:18px;color:#BFE8D9}
+.platform-more-link:hover svg{transform:translate(2px,-2px)}
+@media(prefers-reduced-motion:reduce){.platform-more-link,.platform-more-link svg{transition:none}}
