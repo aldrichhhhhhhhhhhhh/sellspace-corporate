@@ -371,3 +371,47 @@ body{background:var(--paper);color:var(--ink)}
   .intro-section{padding-top:90px;padding-bottom:90px}
 }
 @media(prefers-reduced-motion:reduce){.hero::before{animation:none}}
+
+
+/* WHO WE ARE — editorial manifesto, not a row of generic feature cards */
+.intro-section{position:relative;padding-top:132px;padding-bottom:132px}
+.intro-section>.eyebrow{margin-bottom:42px}
+.intro-grid{grid-template-columns:minmax(0,1.12fr) minmax(300px,.72fr);gap:clamp(42px,8vw,120px);align-items:start}
+.intro-grid h2{font-size:clamp(46px,5.3vw,76px);line-height:.99;max-width:680px}
+.intro-grid h2 em{color:#087F68}
+.intro-copy{max-width:470px;padding-top:8px}
+.large-copy{font:500 clamp(22px,2.2vw,29px)/1.42 var(--serif);font-style:normal;letter-spacing:-.035em;color:#1D3025;margin-bottom:23px}
+.intro-copy>p:not(.large-copy){font-size:14px;line-height:1.9;color:#59665D;margin-bottom:29px}
+.intro-copy .text-link{font-size:12px}
+.value-grid{margin-top:94px;gap:0;border-top:1px solid #CAD8CF;border-bottom:1px solid #CAD8CF}
+.value-grid>div{min-width:0}
+.value-card{height:100%;min-height:0;padding:28px 28px 30px 0;border:0;border-right:1px solid #CAD8CF;background:transparent;box-shadow:none;display:flex;flex-direction:column;align-items:flex-start}
+.value-grid>div:not(:first-child) .value-card{padding-left:28px}
+.value-grid>div:last-child .value-card{border-right:0}
+.value-card:hover{background:transparent;box-shadow:none;transform:none}
+.card-number{font:10px var(--mono);letter-spacing:.1em;color:#087F68}
+.card-symbol{top:26px;right:25px;font-size:18px;color:#A4B9AC}
+.value-card h3{font-size:clamp(17px,1.6vw,21px);line-height:1.2;letter-spacing:-.045em;margin:39px 0 12px;max-width:230px}
+.value-card p{font-size:13px;line-height:1.75;color:#5B675F;max-width:290px}
+@media(max-width:850px){
+ .intro-grid{grid-template-columns:1fr;gap:32px}
+ .intro-grid h2{max-width:650px}
+ .intro-copy{max-width:620px;padding-top:0}
+ .value-grid{margin-top:68px}
+ .value-card{padding-right:20px}
+ .value-grid>div:not(:first-child) .value-card{padding-left:20px}
+}
+@media(max-width:620px){
+ .intro-section{padding-top:82px;padding-bottom:88px}
+ .intro-section>.eyebrow{margin-bottom:30px}
+ .intro-grid{gap:25px}
+ .intro-grid h2{font-size:clamp(39px,10vw,54px);line-height:1.02}
+ .large-copy{font-size:23px;line-height:1.4}
+ .intro-copy>p:not(.large-copy){font-size:13px}
+ .value-grid{grid-template-columns:1fr;margin-top:52px;border-bottom:0}
+ .value-grid>div:not(:first-child) .value-card{padding-left:0}
+ .value-card,.value-grid>div:not(:first-child) .value-card{padding:22px 28px 23px 0;border-right:0;border-bottom:1px solid #CAD8CF}
+ .value-card h3{margin:20px 0 8px;font-size:19px;max-width:none}
+ .value-card p{font-size:12px;max-width:440px}
+ .card-symbol{top:22px;right:5px}
+}
