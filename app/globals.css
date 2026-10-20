@@ -307,3 +307,67 @@ body{background:var(--paper);color:var(--ink)}
 @media(prefers-reduced-motion:reduce){
   .product-stage .product-window{animation:none}
 }
+
+
+/* SELLSPACE — Commerce in Motion: confident, product-led homepage */
+.hero{
+  isolation:isolate;
+  color:#F7F8F4;
+  background:#101914;
+  box-shadow:0 0 0 100vmax #101914;
+  clip-path:inset(0 -100vmax);
+  border-bottom:1px solid #29372F;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:58vw;
+  height:58vw;
+  max-width:760px;
+  max-height:760px;
+  right:-9%;
+  top:0;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(8,127,104,.23) 0%,rgba(8,127,104,.08) 38%,transparent 70%);
+  pointer-events:none;
+  animation:hero-glow 10s ease-in-out infinite alternate;
+}
+.hero h1{font-size:clamp(48px,5.7vw,82px);line-height:1.03;letter-spacing:-.065em;max-width:680px}
+.hero h1 em{color:#79C6AE}
+.hero .eyebrow{background:#1B2A22;border-color:#3B5A49;border-left-color:#79C6AE;color:#D7E9DF}
+.hero .eyebrow::before{background:#79C6AE;box-shadow:0 0 0 3px rgba(121,198,174,.15)}
+.hero .hero-intro{color:#C5CEC7;max-width:470px;font-size:15px}
+.hero .text-link{color:#F7F8F4;border-bottom-color:#79C6AE}
+.hero .hero-index,.hero .scroll-cue{color:#A8B7AC}
+.hero .scroll-line{background:#79C6AE}
+.hero .product-glow{background:radial-gradient(ellipse,rgba(13,130,104,.18),transparent 68%)}
+.hero .product-orbit{border-color:rgba(137,190,164,.22)}
+.hero .product-orbit-two{border-color:rgba(137,190,164,.15)}
+.hero .stage-caption{color:#B4C3B8}
+.hero .product-window{box-shadow:0 34px 90px rgba(0,0,0,.32);border-color:#D5E0D8}
+.hero .float-chip{box-shadow:0 16px 44px rgba(0,0,0,.28)}
+/* Editorial section rhythm: more breathing room, fewer boxed-in impressions */
+.intro-section{padding-top:118px;padding-bottom:120px}
+.intro-grid h2,.journey-heading h2,.partners-grid h2,.contact-section h2{letter-spacing:-.065em}
+.value-card{border-radius:5px}
+.platform-visual{border-radius:5px}
+.timeline-item{transition:padding .25s ease,background .25s ease}
+.timeline-item:hover{padding-left:10px;padding-right:10px;background:rgba(8,127,104,.035)}
+.contact-button{border-radius:3px}
+.nav .nav-cta{border-radius:3px}
+@keyframes hero-glow{from{transform:translate3d(-2%,0,0) scale(.96);opacity:.65}to{transform:translate3d(2%,2%,0) scale(1.06);opacity:1}}
+@media(max-width:850px){
+  .hero{padding-top:54px}
+  .hero h1{font-size:clamp(46px,7.2vw,68px)}
+}
+@media(max-width:620px){
+  .hero{padding-top:44px;padding-bottom:88px}
+  .hero h1{font-size:clamp(40px,10.5vw,58px);line-height:1.04}
+  .hero .hero-intro{font-size:14px;line-height:1.8}
+  .hero::before{width:115vw;height:115vw;right:-40%;top:15%}
+  .hero .hero-index{bottom:-68px}
+  .hero .scroll-cue{bottom:20px}
+  .intro-section{padding-top:90px;padding-bottom:90px}
+}
+@media(prefers-reduced-motion:reduce){.hero::before{animation:none}}
