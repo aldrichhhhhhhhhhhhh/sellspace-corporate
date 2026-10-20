@@ -741,27 +741,30 @@ body{background:var(--paper);color:var(--ink)}
 
 
 
-/* Commerce Flow: quiet, continuous orbital motion behind Who We Are */
+
+/* Commerce Flow — refined orbital motion for the Who We Are section */
 .intro-section{position:relative;isolation:isolate;overflow:hidden;background:#F4F5F2}
-.about-motion-bg{position:absolute;inset:26px 0 20px;z-index:0;overflow:hidden;pointer-events:none;contain:paint}
+.about-motion-bg{position:absolute;inset:20px 0 18px;z-index:0;overflow:hidden;pointer-events:none;contain:paint}
 .about-content{position:relative;z-index:1}
-.commerce-orbit{position:absolute;width:1px;height:1px;left:23%;top:45%;opacity:.9}
-.commerce-orbit::before{content:"";position:absolute;width:min(42vw,610px);height:min(29vw,390px);left:0;top:0;transform:translate(-50%,-50%);border:1px solid rgba(8,127,104,.075);border-radius:50%;pointer-events:none}
-.commerce-node{position:absolute;left:0;top:0;display:block;offset-path:ellipse(min(21vw,305px) min(14.5vw,195px) at 0px 0px);offset-rotate:0deg;will-change:offset-distance,opacity}
-.commerce-card{width:24px;height:18px;border:1px solid rgba(8,127,104,.48);border-radius:6px;background:rgba(8,127,104,.08);box-shadow:0 2px 8px rgba(8,127,104,.035)}
-.commerce-dot{width:9px;height:9px;border-radius:50%;background:rgba(8,127,104,.48);box-shadow:0 0 0 4px rgba(8,127,104,.055)}
-.commerce-node-1{animation:commerce-orbit 32s linear infinite,commerce-depth-a 32s linear infinite}
-.commerce-node-2{animation:commerce-orbit 32s linear -5.333s infinite,commerce-depth-b 32s linear -5.333s infinite}
-.commerce-node-3{animation:commerce-orbit 32s linear -10.666s infinite,commerce-depth-c 32s linear -10.666s infinite}
-.commerce-node-4{animation:commerce-orbit 32s linear -16s infinite,commerce-depth-b 32s linear -16s infinite}
-.commerce-node-5{width:27px;height:20px;border-color:rgba(8,127,104,.6);background:rgba(8,127,104,.12);animation:commerce-orbit 32s linear -21.333s infinite,commerce-depth-anchor 32s linear -21.333s infinite}
-.commerce-node-6{animation:commerce-orbit 32s linear -26.666s infinite,commerce-depth-a 32s linear -26.666s infinite}
+.commerce-orbit{position:absolute;width:1px;height:1px;left:23%;top:44%;opacity:1}
+.commerce-orbit::before,.commerce-orbit::after{content:"";position:absolute;left:0;top:0;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none}
+.commerce-orbit::before{width:min(41vw,590px);height:min(28vw,370px);border:1px solid rgba(8,127,104,.105);box-shadow:0 0 0 18px rgba(8,127,104,.012),inset 0 0 42px rgba(8,127,104,.018)}
+.commerce-orbit::after{width:min(33vw,470px);height:min(22vw,292px);border:1px dashed rgba(8,127,104,.095);animation:commerce-ring-breathe 12s ease-in-out infinite alternate}
+.commerce-node{position:absolute;left:0;top:0;display:block;offset-path:ellipse(min(20.5vw,295px) min(14vw,185px) at 0px 0px);offset-rotate:0deg;will-change:offset-distance,opacity;transform-origin:center}
+.commerce-card{width:23px;height:18px;border:1px solid rgba(8,127,104,.55);border-radius:6px;background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(8,127,104,.095));box-shadow:0 3px 10px rgba(8,127,104,.055)}
+.commerce-dot{width:8px;height:8px;border-radius:50%;background:rgba(8,127,104,.54);box-shadow:0 0 0 4px rgba(8,127,104,.065),0 0 12px rgba(8,127,104,.09)}
+.commerce-node-1{animation:commerce-orbit 34s linear infinite,commerce-depth-back 34s linear infinite}
+.commerce-node-2{animation:commerce-orbit 34s linear -5.666s infinite,commerce-depth-front 34s linear -5.666s infinite}
+.commerce-node-3{animation:commerce-orbit 34s linear -11.333s infinite,commerce-depth-back 34s linear -11.333s infinite}
+.commerce-node-4{animation:commerce-orbit 34s linear -17s infinite,commerce-depth-front 34s linear -17s infinite}
+.commerce-node-5{width:27px;height:21px;border-color:rgba(8,127,104,.68);background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(8,127,104,.15));box-shadow:0 3px 13px rgba(8,127,104,.1);animation:commerce-orbit 34s linear -22.666s infinite,commerce-depth-anchor 34s linear -22.666s infinite}
+.commerce-node-6{animation:commerce-orbit 34s linear -28.333s infinite,commerce-depth-back 34s linear -28.333s infinite}
 @keyframes commerce-orbit{from{offset-distance:0%}to{offset-distance:100%}}
-@keyframes commerce-depth-a{0%,100%{opacity:.38}50%{opacity:.56}}
-@keyframes commerce-depth-b{0%,100%{opacity:.48}50%{opacity:.35}}
-@keyframes commerce-depth-c{0%,100%{opacity:.35}50%{opacity:.6}}
-@keyframes commerce-depth-anchor{0%,100%{opacity:.48;transform:scale(1)}50%{opacity:.62;transform:scale(1.07)}}
-@media(hover:hover){.intro-section:hover .commerce-node{animation-duration:53.333s,53.333s}}
-@media(max-width:850px){.commerce-orbit{left:20%;top:35%}.commerce-orbit::before{width:500px;height:330px}.commerce-node{offset-path:ellipse(250px 165px at 0px 0px)}}
-@media(max-width:620px){.about-motion-bg{inset:16px 0 14px}.commerce-orbit{left:22%;top:26%}.commerce-orbit::before{width:310px;height:235px}.commerce-node{offset-path:ellipse(155px 117px at 0px 0px)}.commerce-card{width:19px;height:15px;border-radius:5px}.commerce-node-5{width:22px;height:17px}}
-@media(prefers-reduced-motion:reduce){.commerce-node{animation:none!important;offset-path:none;position:absolute}.commerce-node-1{left:-90px;top:-120px}.commerce-node-2{left:90px;top:-70px}.commerce-node-3{left:180px;top:0}.commerce-node-4{left:80px;top:100px}.commerce-node-5{left:-100px;top:80px}.commerce-node-6{left:-180px;top:0}}
+@keyframes commerce-depth-back{0%,100%{opacity:.36}50%{opacity:.53}}
+@keyframes commerce-depth-front{0%,100%{opacity:.52}50%{opacity:.39}}
+@keyframes commerce-depth-anchor{0%,100%{opacity:.52;transform:scale(1)}50%{opacity:.68;transform:scale(1.08)}}
+@keyframes commerce-ring-breathe{0%{opacity:.48;transform:translate(-50%,-50%) scale(.985)}100%{opacity:.9;transform:translate(-50%,-50%) scale(1.015)}}
+@media(hover:hover){.intro-section:hover .commerce-node{animation-duration:56.666s,56.666s}.intro-section:hover .commerce-orbit::after{animation-duration:16s}}
+@media(max-width:850px){.commerce-orbit{left:21%;top:35%}.commerce-orbit::before{width:480px;height:320px}.commerce-orbit::after{width:390px;height:260px}.commerce-node{offset-path:ellipse(240px 160px at 0px 0px)}}
+@media(max-width:620px){.about-motion-bg{inset:14px 0 12px}.commerce-orbit{left:23%;top:25%}.commerce-orbit::before{width:310px;height:235px;box-shadow:0 0 0 10px rgba(8,127,104,.012)}.commerce-orbit::after{width:245px;height:185px}.commerce-node{offset-path:ellipse(155px 117px at 0px 0px)}.commerce-card{width:19px;height:15px;border-radius:5px}.commerce-node-5{width:22px;height:17px}}
+@media(prefers-reduced-motion:reduce){.commerce-orbit::after,.commerce-node{animation:none!important}.commerce-node{offset-path:none;position:absolute}.commerce-node-1{left:-90px;top:-120px}.commerce-node-2{left:90px;top:-70px}.commerce-node-3{left:180px;top:0}.commerce-node-4{left:80px;top:100px}.commerce-node-5{left:-100px;top:80px}.commerce-node-6{left:-180px;top:0}}
