@@ -1,5 +1,5 @@
 export const company = {
-  eyebrow: 'A new way to do everyday business',
+  eyebrow: 'A new platform for everyday commerce',
   headline: 'Commerce should feel simple.',
   intro: 'SELLSPACE is being built around a straightforward idea: everyday commerce can be easier to navigate, more intuitive to use, and better connected to the people who make it happen.',
   mission: 'Make everyday commerce simpler through clear, useful digital experiences.',
