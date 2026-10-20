@@ -258,3 +258,52 @@ body{background:var(--paper);color:var(--ink)}
   .footer-bottom{grid-template-columns:1fr 1fr;column-gap:12px;line-height:1.6}
   .footer-bottom>span:first-child{max-width:150px}
 }
+
+/* Center the dashboard composition on narrow screens without changing its visual design */
+@media(max-width:620px){
+  .hero-art.product-stage{
+    display:grid;
+    place-items:center;
+    width:100%;
+    max-width:100%;
+    margin-inline:auto;
+    padding-inline:0;
+    overflow:hidden;
+    box-sizing:border-box;
+  }
+  .product-stage .product-window{
+    width:100%;
+    max-width:100%;
+    margin-inline:auto;
+    justify-self:center;
+    transform:none;
+    transform-origin:center center;
+    animation:mobile-dashboard-enter .8s cubic-bezier(.22,1,.36,1) both;
+  }
+  .product-stage .mock-body{
+    grid-template-columns:minmax(66px,22%) minmax(0,1fr);
+  }
+  .product-stage .mock-sidebar{padding-inline:6px}
+  .product-stage .mock-side-item{gap:5px;padding:8px 4px;font-size:clamp(7px,1.9vw,9px)}
+  .product-stage .mock-side-label{padding-inline:4px;font-size:6px}
+  .product-stage .mock-dashboard{padding:12px 8px 10px}
+  .product-stage .mock-greeting{gap:5px}
+  .product-stage .mock-greeting h3{font-size:clamp(10px,2.7vw,15px)}
+  .product-stage .mock-period{font-size:6px;padding:5px 4px}
+  .product-stage .mock-metric{padding:7px 5px}
+  .product-stage .mock-lower{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .product-stage .mock-card-heading{gap:4px;flex-wrap:wrap}
+  .product-stage .mock-card-heading span{font-size:clamp(7px,1.9vw,10px)}
+  .product-stage .mock-card-heading small{font-size:6px}
+  .product-stage .mock-order-value{white-space:normal}
+  .product-stage .float-chip{max-width:48%;transform:scale(.82)}
+  .product-stage .chip-orders{right:2px}
+  .product-stage .chip-sales{left:2px}
+}
+@keyframes mobile-dashboard-enter{
+  from{opacity:0;transform:translateY(14px) scale(.985)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@media(prefers-reduced-motion:reduce){
+  .product-stage .product-window{animation:none}
+}
