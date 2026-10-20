@@ -52,7 +52,7 @@ export default function SellerWorkspacePage() {
     </section>
 
     <section id="workspace" className="seller-preview-workspace seller-preview-wrap">
-      <Reveal><p className="eyebrow">A CLOSER LOOK / DESKTOP + MOBILE DIRECTION</p><div className="seller-preview-section-head"><h2>One considered space<br/>for the <em>everyday work.</em></h2><p>This concept brings the promise into view: a practical home for priorities, orders, and products. The interface is illustrative and represents the direction we’re exploring—not a claim that every screen or workflow is already available.</p></div></Reveal>
+      <Reveal><p className="eyebrow">01 / SELLER VIEW · DAILY OPERATIONS</p><div className="seller-preview-section-head"><h2>One considered space<br/>for the <em>everyday work.</em></h2><p>For sellers: a practical home for priorities, orders, and products. This illustrative workspace shows the direction we’re exploring—not a claim that every screen or workflow is already available.</p></div></Reveal>
       <div className="seller-preview-showcase">
         <Reveal className="seller-preview-board">
           <div className="sp-board-top"><span>SELLSPACE / DAILY OPERATIONS</span><span>CONCEPT 02</span></div>
@@ -64,7 +64,7 @@ export default function SellerWorkspacePage() {
         </Reveal>
         <Reveal className="seller-phone-stage" delay={0.12}>
           <div className="seller-phone-orbit seller-phone-orbit-one"/><div className="seller-phone-orbit seller-phone-orbit-two"/>
-          <div className="seller-phone-label"><span>ALSO IN VIEW</span><b>A mobile-first<br/>companion.</b><p>A sneak peek at how everyday tasks could feel on the go.</p></div>
+          <div className="seller-phone-label"><span>SELLER VIEW / MOBILE</span><b>Your shop, wherever<br/>the day takes you.</b><p>Quick visibility into orders and tasks that may need attention.</p></div>
           <div className="seller-phone">
             <div className="seller-phone-island"/>
             <div className="seller-phone-screen">
@@ -79,6 +79,38 @@ export default function SellerWorkspacePage() {
           <div className="seller-phone-float"><span><Check size={13}/></span><b>Designed for the day-to-day.</b></div>
           <p className="seller-phone-disclaimer">MOBILE UI CONCEPT · ILLUSTRATIVE ONLY</p>
         </Reveal>
+      </div>
+    </section>
+
+    
+    <section className="buyer-preview-section">
+      <div className="seller-preview-wrap">
+        <Reveal><p className="eyebrow">02 / BUYER VIEW · DISCOVERY + SHOPPING</p><div className="buyer-preview-heading"><div><h2>Find your next<br/><em>everyday favorite.</em></h2></div><p>For buyers: a more inviting way to discover products, browse a marketplace, explore short-form product videos, and move through checkout. This direction follows the mobile app reference you shared.</p></div></Reveal>
+        <div className="buyer-preview-grid">
+          <Reveal className="buyer-preview-copy">
+            <span className="buyer-preview-kicker">THE SHOPPING SIDE</span>
+            <h3>Made for the people<br/>on the other side<br/>of every order.</h3>
+            <p>SELLSPACE is being shaped around both sides of commerce. Buyers should have a clear path from discovery to product details and checkout—without losing the simple, everyday feel.</p>
+            <div className="buyer-preview-features"><span><i>01</i><b>Explore products</b><small>Browse a marketplace and product picks.</small></span><span><i>02</i><b>Discover through video</b><small>A Shorts-style feed for product discovery.</small></span><span><i>03</i><b>Shop with clarity</b><small>Product details and a focused checkout flow.</small></span></div>
+            <p className="buyer-preview-disclaimer">BUYER MOBILE UI CONCEPT · ILLUSTRATIVE ONLY</p>
+          </Reveal>
+          <Reveal className="buyer-phone-stage" delay={0.12}>
+            <div className="buyer-phone-orbit buyer-phone-orbit-one"/><div className="buyer-phone-orbit buyer-phone-orbit-two"/>
+            <div className="buyer-phone">
+              <div className="buyer-phone-island"/>
+              <div className="buyer-phone-screen">
+                <div className="buyer-phone-status"><span>9:41</span><span>••• ▰</span></div>
+                <div className="buyer-phone-top"><span className="buyer-phone-brandmark">S</span><b>SELLSPACE<small>YOUR SPACE.</small></b><span className="buyer-phone-bag"><ShoppingBag size={15}/></span></div>
+                <div className="buyer-phone-search"><Search size={12}/><span>Search products, shops...</span><span className="buyer-search-filter">☷</span></div>
+                <div className="buyer-phone-market"><div><small>MARKETPLACE</small><h4>Good finds.<br/><em>Better shopping.</em></h4><p>Discover something useful.</p></div><span className="buyer-market-flower">✳</span></div>
+                <div className="buyer-phone-cats"><span className="chosen">For you</span><span>Fashion</span><span>Home</span><span>Tech</span></div>
+                <div className="buyer-phone-picks"><div className="buyer-phone-section-title"><b>Picked for you</b><span>SEE ALL ↗</span></div><div className="buyer-product-grid"><div className="buyer-product"><div className="buyer-product-image tote"><span>SS</span><ShoppingBag size={26}/></div><b>Everyday Tote Bag</b><strong>₱499</strong><small>Everyday Goods</small></div><div className="buyer-product"><div className="buyer-product-image bottle"><span>NEW</span><Package size={25}/></div><b>Daily Bottle</b><strong>₱350</strong><small>Good Things Co.</small></div></div></div>
+                <div className="buyer-phone-nav"><span className="active"><ShoppingBag size={14}/>Home</span><span><Search size={14}/>Explore</span><span className="buyer-shorts">▶<small>Shorts</small></span><span><CircleHelp size={14}/>Profile</span></div>
+              </div>
+            </div>
+            <div className="buyer-phone-float"><span><Check size={13}/></span><b>Discover. Decide. Done.</b></div>
+          </Reveal>
+        </div>
       </div>
     </section>
 
