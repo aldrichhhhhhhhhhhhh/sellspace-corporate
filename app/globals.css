@@ -543,3 +543,50 @@ body{background:var(--paper);color:var(--ink)}
 }
 @keyframes platform-card-drift-mobile{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){.platform-art-card{animation:none}}
+
+/* SELLSPACE trust center — editorial, product-led, and responsive */
+.trust-page{background:#F4F5F2}
+.trust-hero{background:#E7EFEA;padding:26px 0 0;margin-top:0}
+.trust-hero>.policy-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:48px}
+.trust-hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:clamp(36px,7vw,110px);align-items:center;padding:0 0 76px}
+.trust-hero-copy .eyebrow{display:flex;align-items:center;gap:10px}
+.trust-live-dot{width:8px;height:8px;border-radius:50%;background:#087F68;box-shadow:0 0 0 5px rgba(8,127,104,.12)}
+.trust-hero h1{font-size:clamp(52px,7.1vw,98px);line-height:.98;letter-spacing:-.075em;font-weight:500;margin:32px 0 26px;max-width:850px}
+.trust-hero h1 em,.trust-section-heading h2 em,.trust-closing h2 em{font-family:var(--serif);font-weight:500;color:#087F68}
+.trust-hero .policy-lead{max-width:610px;font-size:clamp(16px,1.45vw,19px);line-height:1.75;color:#45564D;margin:0}
+.trust-scroll-link,.trust-contact-link{display:inline-flex;align-items:center;gap:12px;margin-top:30px;padding-bottom:8px;border-bottom:1px solid #087F68;color:#075F50;font-size:14px;font-weight:600}
+.trust-principle-card{position:relative;background:#10251E;color:#F4F5F2;min-height:330px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.trust-principle-card:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(173,221,198,.19);border-radius:50%;right:-100px;top:-95px;box-shadow:0 0 0 28px rgba(173,221,198,.035),0 0 0 58px rgba(173,221,198,.025)}
+.trust-card-index,.trust-card-foot{font:10px var(--mono);letter-spacing:.12em;color:#A9C7B8}
+.trust-card-symbol{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border:1px solid rgba(173,221,198,.45);border-radius:50%;color:#77D3B2;margin:48px 0 22px}
+.trust-principle-card h2{font-size:29px;letter-spacing:-.045em;font-weight:500;line-height:1.1;margin:0 0 14px}
+.trust-principle-card p{font-size:14px;line-height:1.75;color:#C1D0C8;margin:0 0 28px;max-width:350px}
+.trust-values{display:flex;justify-content:space-between;gap:16px;padding:19px 0;border-top:1px solid #CFDCD4;font:10px var(--mono);letter-spacing:.08em;color:#526B5F}
+.trust-library{padding-top:112px;padding-bottom:110px}
+.trust-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:50px;margin-bottom:42px}
+.trust-section-heading .eyebrow,.trust-closing .eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:#087F68}
+.trust-section-heading h2{font-size:clamp(38px,5vw,62px);font-weight:500;line-height:1.02;letter-spacing:-.065em;margin:22px 0 0}
+.trust-section-heading>p{max-width:365px;font-size:14px;line-height:1.8;color:#647168;margin:0 0 5px}
+.trust-policy-list{border-top:1px solid #D7E0D9}
+.trust-policy-card{display:grid;grid-template-columns:42px 54px minmax(0,1fr) 24px;gap:22px;align-items:center;padding:27px 18px;border-bottom:1px solid #D7E0D9;transition:background .2s ease,padding .2s ease}
+.trust-policy-card:hover{background:#E8EFEA;padding-left:25px;padding-right:25px}
+.trust-policy-number{font:11px var(--mono);color:#718278}
+.trust-policy-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:#E2ECE5;color:#087F68;border:1px solid #D1E0D6}
+.trust-policy-copy{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.trust-policy-tag{font:9px var(--mono);letter-spacing:.1em;color:#087F68}
+.trust-policy-copy strong{font-size:21px;font-weight:500;letter-spacing:-.035em}
+.trust-policy-copy small{font-size:13px;line-height:1.6;color:#657269}
+.trust-policy-arrow{color:#087F68;transition:transform .2s ease}
+.trust-policy-card:hover .trust-policy-arrow{transform:translate(3px,-3px)}
+.trust-draft-note{display:flex;align-items:flex-start;gap:15px;background:#E7EFEA;padding:21px 24px;margin-top:28px;border:1px solid #D4E0D8}
+.trust-note-mark{flex:0 0 22px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#087F68;color:white;font:12px var(--mono)}
+.trust-draft-note p{font-size:12px;line-height:1.8;color:#52665B;margin:0}
+.trust-draft-note strong{color:#17271F}
+.trust-closing{background:#10251E;color:#F4F5F2;padding:82px 0 88px}
+.trust-closing h2{font-size:clamp(42px,6vw,76px);line-height:1;letter-spacing:-.07em;font-weight:500;margin:24px 0}
+.trust-closing h2 em{color:#7ED2B4}
+.trust-closing-inner>p:not(.eyebrow){font-size:14px;line-height:1.8;color:#C1D0C8;max-width:540px}
+.trust-contact-link{color:#A7E1C9;border-color:#6AB99A}
+@media(max-width:850px){.trust-hero-grid{grid-template-columns:1fr;gap:38px;padding-bottom:48px}.trust-principle-card{min-height:280px}.trust-card-symbol{margin-top:35px}.trust-section-heading{align-items:flex-start;flex-direction:column;gap:18px}.trust-section-heading>p{max-width:560px}.trust-library{padding-top:78px;padding-bottom:80px}}
+@media(max-width:600px){.trust-hero{padding-top:20px}.trust-hero>.policy-back{margin-bottom:35px}.trust-hero h1{font-size:clamp(48px,13vw,70px);margin-top:25px}.trust-hero-grid{padding-bottom:35px}.trust-principle-card{padding:23px;min-height:260px}.trust-values{flex-direction:column;gap:10px}.trust-library{padding-top:64px;padding-bottom:62px}.trust-section-heading h2{font-size:42px}.trust-policy-card{grid-template-columns:26px 42px minmax(0,1fr) 18px;gap:12px;padding:22px 4px}.trust-policy-card:hover{padding-left:8px;padding-right:8px}.trust-policy-icon{width:40px;height:40px}.trust-policy-copy strong{font-size:17px}.trust-policy-copy small{font-size:12px}.trust-policy-tag{font-size:8px}.trust-draft-note{padding:17px 15px}.trust-closing{padding:65px 0}.trust-closing h2{font-size:45px}}
+@media(prefers-reduced-motion:reduce){.trust-policy-card,.trust-policy-arrow{transition:none}}
