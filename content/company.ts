@@ -5,8 +5,8 @@ export const company = {
   mission: 'Make everyday commerce simpler through clear, useful digital experiences.',
   vision: 'A world where starting, managing, and growing through commerce feels more accessible to everyone.',
   values: [
-    { number: '01', title: 'Clarity over complexity', body: 'Useful tools should feel understandable from the first interaction.' },
-    { number: '02', title: 'People before process', body: 'Build around the real needs of customers, merchants, and everyday operators.' },
-    { number: '03', title: 'Progress with purpose', body: 'Make deliberate improvements that solve meaningful problems.' },
+    { number: '01', title: 'No complexity for show.', body: 'Every screen and step should earn its place by helping someone get something done.' },
+    { number: '02', title: 'Built for the work itself.', body: 'Start with the everyday tasks sellers actually face—not another layer of admin to manage.' },
+    { number: '03', title: 'Useful beats impressive.', body: 'We want to solve real friction before adding more features. Simple should mean capable, not limited.' },
   ],
 } as const;
