@@ -768,3 +768,8 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:850px){.commerce-orbit{left:21%;top:35%}.commerce-orbit::before{width:480px;height:320px}.commerce-orbit::after{width:390px;height:260px}.commerce-node{offset-path:ellipse(240px 160px at 0px 0px)}}
 @media(max-width:620px){.about-motion-bg{inset:14px 0 12px}.commerce-orbit{left:23%;top:25%}.commerce-orbit::before{width:310px;height:235px;box-shadow:0 0 0 10px rgba(8,127,104,.012)}.commerce-orbit::after{width:245px;height:185px}.commerce-node{offset-path:ellipse(155px 117px at 0px 0px)}.commerce-card{width:19px;height:15px;border-radius:5px}.commerce-node-5{width:22px;height:17px}}
 @media(prefers-reduced-motion:reduce){.commerce-orbit::after,.commerce-node{animation:none!important}.commerce-node{offset-path:none;position:absolute}.commerce-node-1{left:-90px;top:-120px}.commerce-node-2{left:90px;top:-70px}.commerce-node-3{left:180px;top:0}.commerce-node-4{left:80px;top:100px}.commerce-node-5{left:-100px;top:80px}.commerce-node-6{left:-180px;top:0}}
+
+
+/* Prevent decorative orbit and mockup layers from creating page-level horizontal scroll */
+html,body{max-width:100%;overflow-x:clip}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
