@@ -217,3 +217,44 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:620px){
   .eyebrow{font-size:9px;padding:9px 10px;margin-bottom:22px;letter-spacing:.08em}
 }
+
+/* Mobile polish: keep the product concept readable and brand lockup consistent */
+.site-footer .footer-wordmark{display:inline-flex;align-items:center;gap:12px;max-width:100%}
+.site-footer .footer-wordmark .wordmark-name{display:block;white-space:nowrap;font-size:clamp(19px,2vw,25px);line-height:1;font-weight:700;letter-spacing:-.055em}
+.site-footer .footer-wordmark .wordmark-name small{display:block;font:7px var(--mono);letter-spacing:.14em;color:var(--muted);margin-top:6px}
+.site-footer .footer-wordmark .brand-badge{display:grid;place-items:center;flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:#087F68;color:#fff;font:700 31px/.9 var(--sans);letter-spacing:-.07em}
+.site-footer>p{margin:24px 0 30px}
+.product-stage{min-width:0}
+.product-window{width:min(100%,650px);min-width:0}
+.mock-status,.stage-caption{max-width:100%}
+@media(max-width:620px){
+  .hero{padding-top:54px}
+  .hero-art.product-stage{width:100%;height:auto;min-height:0;aspect-ratio:1.02;overflow:visible;margin-top:34px;margin-bottom:32px}
+  .product-stage .product-window{width:100%;max-width:100%;min-width:0;transform:none}
+  .product-stage .mock-body{min-width:0}
+  .product-stage .mock-sidebar{flex:0 0 22%;min-width:0}
+  .product-stage .mock-dashboard{min-width:0;flex:1}
+  .product-stage .mock-metrics{gap:5px}
+  .product-stage .mock-metric{min-width:0;padding:7px 5px}
+  .product-stage .mock-metric strong{font-size:clamp(10px,2.7vw,17px)}
+  .product-stage .mock-metric>span,.product-stage .mock-metric small{font-size:clamp(6px,1.7vw,10px)}
+  .product-stage .mock-lower{gap:6px}
+  .product-stage .mock-chart-card,.product-stage .mock-orders-card{min-width:0;padding:7px}
+  .product-stage .mock-order{gap:4px}
+  .product-stage .mock-order-avatar{flex:0 0 20px;width:20px;height:20px}
+  .product-stage .mock-order-info b,.product-stage .mock-order-value{font-size:clamp(6px,1.7vw,10px)}
+  .product-stage .mock-order-info small,.product-stage .mock-order-value small{font-size:clamp(5px,1.4vw,8px)}
+  .product-stage .mock-status{font-size:clamp(5px,1.4vw,8px);gap:6px}
+  .product-stage .float-chip{transform:scale(.78);transform-origin:center}
+  .product-stage .chip-orders{right:-5px;top:15%}
+  .product-stage .chip-sales{left:-5px;bottom:18%}
+  .product-stage .stage-caption{font-size:7px;gap:8px;flex-wrap:wrap}
+  .hero-index{margin-top:30px}
+  .site-footer .footer-wordmark{gap:9px}
+  .site-footer .footer-wordmark .brand-badge{width:34px;height:34px;border-radius:10px;font-size:25px}
+  .site-footer .footer-wordmark .wordmark-name{font-size:20px}
+  .site-footer .footer-wordmark .wordmark-name small{font-size:6px;letter-spacing:.1em}
+  .site-footer>p{margin:23px 0 26px}
+  .footer-bottom{grid-template-columns:1fr 1fr;column-gap:12px;line-height:1.6}
+  .footer-bottom>span:first-child{max-width:150px}
+}
