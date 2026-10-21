@@ -83,7 +83,7 @@ export default function SellerWorkspacePage() {
     </section>
 
     
-    <section className="buyer-preview-section">
+    <section id="buyer-view" className="buyer-preview-section">
       <div className="seller-preview-wrap">
         <Reveal><p className="eyebrow">02 / BUYER VIEW · DISCOVERY + SHOPPING</p><div className="buyer-preview-heading"><div><h2>Find your next<br/><em>everyday favorite.</em></h2></div><p>For buyers: browse useful finds, discover products through short-form video, and move toward a clear product decision. This is an illustrative direction informed by the mobile reference—not a live storefront.</p></div></Reveal>
         <div className="buyer-discovery-board">
