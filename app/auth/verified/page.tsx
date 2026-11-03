@@ -18,7 +18,7 @@ export default async function VerificationPage({ searchParams }: VerificationPag
 
   return (
     <>
-      <style>{\`
+      <style>{`
         .verification-page {
           --emerald: #087f68;
           --dark: #101c19;
@@ -65,7 +65,7 @@ export default async function VerificationPage({ searchParams }: VerificationPag
           .confirmation { padding: 32px 16px 20px; }
           .verification-section { padding-top: 42px; }
         }
-      \`}
+      `}
       </style>
 
       <main className="verification-page">
